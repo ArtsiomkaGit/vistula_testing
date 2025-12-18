@@ -1,0 +1,98 @@
+{
+  "id": "registration",
+  "title": "Registration Form",
+  "description": "Create a registration form with at least 10 fields including personal information, contact details, and preferences",
+  "fields": [
+    {
+      "id": "firstName",
+      "type": "text",
+      "required": true,
+      "label": "First Name",
+      "placeholder": "Enter your first name"
+    },
+    {
+      "id": "lastName",
+      "type": "text",
+      "required": true,
+      "label": "Last Name",
+      "placeholder": "Enter your last name"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "required": true,
+      "label": "Email Address",
+      "placeholder": "Enter your email",
+      "validation": {
+        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+      }
+    },
+    {
+      "id": "phone",
+      "type": "tel",
+      "required": false,
+      "label": "Phone Number",
+      "placeholder": "Enter your phone number"
+    },
+    {
+      "id": "age",
+      "type": "number",
+      "required": true,
+      "label": "Age",
+      "placeholder": "Enter your age",
+      "validation": {
+        "min": 18,
+        "max": 120
+      }
+    },
+    {
+      "id": "password",
+      "type": "password",
+      "required": true,
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "validation": {
+        "minLength": 8
+      }
+    },
+    {
+      "id": "country",
+      "type": "text",
+      "required": true,
+      "label": "Country",
+      "placeholder": "Enter your country"
+    },
+    {
+      "id": "city",
+      "type": "text",
+      "required": true,
+      "label": "City",
+      "placeholder": "Enter your city"
+    },
+    {
+      "id": "zipCode",
+      "type": "text",
+      "required": true,
+      "label": "ZIP Code",
+      "placeholder": "Enter your ZIP code"
+    },
+    {
+      "id": "newsletter",
+      "type": "checkbox",
+      "required": false,
+      "label": "Subscribe to newsletter"
+    },
+    {
+      "id": "terms",
+      "type": "checkbox",
+      "required": true,
+      "label": "I agree to the terms and conditions"
+    }
+  ],
+  "submitButton": {
+    "id": "submitBtn",
+    "text": "Submit",
+    "type": "submit"
+  }
+}
+

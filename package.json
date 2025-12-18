@@ -1,0 +1,28 @@
+{
+  "name": "vistula-testing",
+  "version": "1.0.0",
+  "description": "Student Frontend Assignment Platform with automatic form testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:opa": "jest tests/opa5",
+    "test:watch": "jest --watch",
+    "start": "npx serve student-app -l 8000",
+    "dev": "npx serve student-app -l 8000"
+  },
+  "keywords": [
+    "testing",
+    "forms",
+    "student-assignments",
+    "jest",
+    "opa5"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jsdom": "^23.0.1"
+  }
+}
