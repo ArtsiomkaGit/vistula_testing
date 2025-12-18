@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form Assignment</h1>
+        
+        <div class="instructions">
+            <h2>Assignment Instructions</h2>
+            <ol>
+                <li><strong>Open the assignment file:</strong> Open <code>assignments/registration.json</code> to see the form requirements</li>
+                <li><strong>Study the requirements:</strong> The JSON file contains all field specifications including:
+                    <ul>
+                        <li>Field IDs and names</li>
+                        <li>Field types (text, email, number, password, tel, date, textarea, select, radio, checkbox)</li>
+                        <li>Which fields are required</li>
+                        <li>Labels and placeholders</li>
+                        <li>Validation rules (min, max, pattern, minLength, maxLength)</li>
+                    </ul>
+                </li>
+                <li><strong>Create the form:</strong> Build a form below with all required fields according to the JSON specification</li>
+                <li><strong>Requirements:</strong>
+                    <ul>
+                        <li>Form must have <code>id="registrationForm"</code></li>
+                        <li>All fields must have correct <code>id</code> and <code>name</code> attributes (as specified in JSON)</li>
+                        <li>Use correct input types (text, email, number, password, tel, date, textarea, select, radio, checkbox)</li>
+                        <li>Add <code>required</code> attribute to required fields</li>
+                        <li>Include correct labels and placeholders from JSON</li>
+                        <li>Submit button must have <code>id="submitBtn"</code> and <code>type="submit"</code></li>
+                        <li>Minimum 10 fields required</li>
+                    </ul>
+                </li>
+                <li><strong>Implement form submission:</strong> Edit <code>script.js</code> to handle form submission:
+                    <ul>
+                        <li>Add event listener for form submit</li>
+                        <li>Prevent default form submission behavior</li>
+                        <li>Collect form data</li>
+                        <li>Display data (console.log, alert, etc.)</li>
+                    </ul>
+                </li>
+                <li><strong>Test your solution:</strong> Run <code>npm test</code> to verify your form meets all requirements</li>
+            </ol>
+            
+            <div class="example">
+                <h3>Example Field Structure:</h3>
+                <pre><code>&lt;div class="form-group"&gt;
+    &lt;label for="fieldId"&gt;Label Text&lt;/label&gt;
+    &lt;input type="text" id="fieldId" name="fieldId" placeholder="Placeholder text" required&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <h2>Your Form</h2>
+        <form id="registrationForm">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
