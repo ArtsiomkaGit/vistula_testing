@@ -13,6 +13,9 @@ Your task is to create a functional HTML form with JavaScript that meets all the
 ```bash
 npm install
 ```
+```bash
+npm run dev
+```
 
 ### Step 2: Read the Assignment Requirements
 
